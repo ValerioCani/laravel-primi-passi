@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $text = "Io sono Giorgia, sono una donna, sono una madre, SONO CRISTIANA!!";
+
+    return view('home', [
+        'TIK_TOK_TAK' => $text
+    ]);
 });
